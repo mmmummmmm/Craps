@@ -1,5 +1,5 @@
 import random
-from functions import roll_dice, win_message, lose_message
+from craps_functions import roll_dice, win_message, lose_message
 input('''
       Welcome to Craps.
       In Craps you get to have a once in a life time oppurtinity to win billions of fake dollar.
@@ -17,23 +17,23 @@ input('''
                   To begin press Enter . . .
       ''')
 
-
-dice= roll_dice()
-dice_sum = dice[0]+dice[1]
+#first roll
+dice = roll_dice()
+dice_sum = dice[0] + dice[1]
 if dice_sum == 7 or dice_sum == 11:
     win_message()
 elif dice_sum == 2 or dice_sum == 3 or dice_sum == 12:
     lose_message()
 else:
-    goal= dice_sum
+    goal = dice_sum
     print(f"\nNow the goal is: {goal}\nIf the sum of your dice is {goal}, You win. If at any point you get 7, you lose!\n")
     while True:
-        input ('\nTo role the dice again, press ENTER . . ')
-        dice=roll_dice()
-        if dice[0]+dice[1]==goal:
+        input ('\nTo roll the dice again, press ENTER . . ')
+        dice = roll_dice()
+        if dice[0] + dice[1] == goal:
             win_message()
             break
-        if dice[0]+dice[1]==7:
+        if dice[0] + dice[1] == 7:
             lose_message()
             break
 
