@@ -30,14 +30,14 @@ To run the Craps game, you'll need to have Python installed on your system. You 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/mmmummmmm/craps-game.git
+    git clone https://github.com/mmmummmmm/Craps.git
     cd craps-game
     ```
 
 2. Run the game:
 
     ```bash
-    python craps_game.py
+    python Main.py
     ```
 
 ## How to Play
@@ -52,7 +52,7 @@ After running the game, you'll be prompted with a welcome message and the rules.
 
 ```plaintext
 .
-├── main.py
+├── Main.py
 ├── craps_functions.py     # Main game script
 └── README.md         # This README file
 ```
