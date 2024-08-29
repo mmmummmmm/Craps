@@ -31,7 +31,7 @@ To run the Craps game, you'll need to have Python installed on your system. You 
 
     ```bash
     git clone https://github.com/mmmummmmm/Craps.git
-    cd craps-game
+    cd Craps
     ```
 
 2. Run the game:
